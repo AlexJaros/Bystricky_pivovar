@@ -42,7 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 244, 98, 58;
+  /* sekce o nas */
+  --bs-primary-rgb: 248, 249, 250;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -73,7 +74,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f4623a;
+  --bs-link-color: #a98215;
   --bs-link-hover-color: #c34e2e;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -3628,6 +3629,7 @@ textarea.form-control-lg {
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -3640,6 +3642,20 @@ textarea.form-control-lg {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
   cursor: default;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* Barvy při hoveru */
+.nav-link:hover .facebook-icon {
+    color: #3b5998;
+}
+
+.nav-link:hover .instagram-icon {
+    color: #E4405F;
 }
 
 .nav-tabs {
@@ -10843,6 +10859,10 @@ body {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
+.text-black-75 {
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
@@ -10856,7 +10876,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  /* background-color: #f4623a; */
   opacity: 1;
 }
 
