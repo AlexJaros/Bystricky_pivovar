@@ -5500,6 +5500,24 @@ textarea.form-control-lg {
   .modal-fullscreen-lg-down .modal-body {
     overflow-y: auto;
   }
+
+  #navbarResponsive {
+    text-align: center; /* Zarovná obsah textově */
+  }
+
+  #navbarResponsive .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vycentruje jednotlivé odkazy */
+  }
+
+  #navbarResponsive .nav-item {
+    width: 100%; /* Aby se každý odkaz rozprostřel */
+  }
+
+  #navbarResponsive .nav-link {
+    display: inline-block; /* Aby šly odkazy vycentrovat */
+  }
 }
 @media (max-width: 1199.98px) {
   .modal-fullscreen-xl-down {
